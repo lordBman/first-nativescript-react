@@ -10,12 +10,15 @@ type ScreenTwoProps = {
     navigation: FrameNavigationProp<MainStackParamList, "Two">,
 };
 
-export function ScreenTwo({ navigation, route }: ScreenTwoProps) {
+export const  ScreenTwo : React.FC< ScreenTwoProps> = ({ navigation, route }) => {
     return (
         <flexboxLayout style={styles.container}>
             <label style={styles.text}>You're viewing screen two!</label>
             <label style={styles.text}>Message: {route.params.message}</label>
             <button style={styles.button}onTap={() => navigation.goBack()}>Go back</button>
+            <gridLayout>
+
+            </gridLayout>
         </flexboxLayout>
     );
 }

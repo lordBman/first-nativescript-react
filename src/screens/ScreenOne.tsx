@@ -11,7 +11,7 @@ interface ScreenOneProps {
     navigation: FrameNavigationProp<MainStackParamList, "One">,
 }
 
-export function ScreenOne({ navigation }: ScreenOneProps) {
+export const ScreenOne: React.FC<ScreenOneProps> = ({ navigation, route }) => {
     return (
         <flexboxLayout style={styles.container}>
             <label className="fas" style={styles.text}>&#xf135; You're viewing screen one!</label>
