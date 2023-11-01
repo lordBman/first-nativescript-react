@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "@nativescript/core": "~8.6.0",
+    "@react-navigation/native": "^6.1.9",
     "react": "^18.2.0",
     "react-nativescript": "^5.0.0",
     "react-nativescript-navigation": "^5.0.0"
