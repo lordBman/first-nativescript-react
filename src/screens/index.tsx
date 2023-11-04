@@ -2,8 +2,8 @@ import * as React from "react";
 import { BaseNavigationContainer } from '@react-navigation/core';
 import { stackNavigatorFactory } from "react-nativescript-navigation";
 
-import { ScreenOne } from "./ScreenOne";
-import { ScreenTwo } from "./ScreenTwo";
+import { Home } from "./home";
+import { Details } from "./datails";
 
 /**
  * The main stack navigator for the whole app.
@@ -11,9 +11,9 @@ import { ScreenTwo } from "./ScreenTwo";
 const StackNavigator = stackNavigatorFactory();
 export const MainStack = () => (
     <BaseNavigationContainer>
-        <StackNavigator.Navigator initialRouteName="Screen One" screenOptions={{ headerStyle: {  backgroundColor: "white"}, headerShown: true }}>
-            <StackNavigator.Screen name="One" component={ScreenOne} />
-            <StackNavigator.Screen name="Two" component={ScreenTwo} />
+        <StackNavigator.Navigator initialRouteName="home" screenOptions={{ headerStyle: {  backgroundColor: "white"}, headerShown: true }}>
+            <StackNavigator.Screen name="home" component={Home} options={{title: 'NativeFlix'}} />
+            <StackNavigator.Screen name="details" component={Details} />
         </StackNavigator.Navigator>
     </BaseNavigationContainer>
 );
